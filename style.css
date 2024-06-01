@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    overflow-x: hidden;
+    min-height: 100vh;
+    /* width: 100%; */
+   
+  
+}
+header{
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    width: 100%;
+    z-index: 100;
+}
+.logo{
+color: #fff;
+font-size: 1.5rem;
+user-select: none;
+
+}
+.navbar a{
+    color: #fff;
+    font-weight: 600;
+    padding: 6px 15px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: .5s ;
+    font-size: 1rem;
+    margin-left: 10px;
+
+}
+.navbar a:hover,a.active{
+    background-color: #fff;
+    color: black;
+
+}
+.parallex{
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background: url(background.png);
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+}
+.text{
+    font-size: 5rem;
+    position: absolute;
+    text-shadow: 2px 4px 5px;
+
+}
+.parallex img{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+.parallex img.gate-left{
+    transform: translateX(-282px);
+    position: fixed;
+}
+.parallex img.gate-right{
+    transform: translateX(305px);
+    position: fixed;
+}
+.sec{
+    position: relative;
+    background: black;
+
+}
+.sec h2{
+  font-size: 3rem;
+  color: #fff;  
+}
+.sec p{
+    color: #fff;
+    font-size: 1rem;
+    text-align: justify;
+}
